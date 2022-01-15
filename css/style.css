@@ -37,7 +37,7 @@ li {
 :root {
   --main-color: #292929;
   --button-bg-color: #e02c6d;
-  --button-bg-color-hover: #444444 ;
+  --button-bg-color-hover: #444444;
   --button-text-color: #e02c6d;
   --brand-color: #e02c6d;
   --brand-color2: #c031ad;
@@ -229,10 +229,42 @@ p.product-description {
   color: var(--main-color);
 }
 /* Popular Section End*/
+/* Contact Section Start */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background-color: rgb(202, 202, 252);
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+.contact-left {
+  margin-left: 60px;
+  margin-top: 150px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-field {
+  width: 70%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid #ff008e;
+}
+
+/* Contact Section End */
+
 /* Footer Section Start */
 
 footer {
-  background-color: #060518;
+  background-color: #000000;
   text-align: center;
 }
 footer .row {
@@ -262,5 +294,3 @@ footer .fab {
 }
 
 /* Footer Section End */
-
-
