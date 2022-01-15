@@ -35,14 +35,15 @@ li {
   list-style: none;
 }
 :root {
-  --main-color: #3a3a3a;
+  --main-color: #292929;
   --button-bg-color: #e02c6d;
+  --button-bg-color-hover: #444444 ;
   --button-text-color: #e02c6d;
   --brand-color: #e02c6d;
   --brand-color2: #c031ad;
 }
 
-/* Menu bar  Start*/
+/* Nav bar  Starting */
 nav {
   height: 100px;
   display: flex;
@@ -56,10 +57,11 @@ nav a {
   font-weight: 800;
   font-size: 18px;
   color: var(--main-color);
+  text-decoration: none;
 }
 nav a:hover {
   color: var(--brand-color);
-  text-decoration: underline;
+  text-decoration: solid;
 }
 nav ul {
   display: flex;
@@ -74,4 +76,55 @@ nav .logo a:hover {
   text-decoration: none;
 }
 
-/* Menu bar  End*/
+/* Nav bar  End*/
+
+/* First Section Start*/
+
+.hero img {
+  transition: transform 1s ease;
+}
+.hero:hover.hero img {
+  transform-origin: center;
+  transform: scale(0.9) rotate(45deg);
+}
+
+.hero .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+}
+.hero .content {
+  display: flex;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--main-color);
+  letter-spacing: -2px;
+  line-height: 65px;
+}
+.hero p {
+  margin: 30px 0;
+}
+a.button-style {
+  padding: 12px 20px;
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+  border-radius: 12px;
+  margin-top: 8px;
+  display: inline-block;
+}
+a.button-style:hover {
+  background-color: var(--button-bg-color-hover);
+}
+
+a.button-style:hover .fa-arrow-alt-circle-right {
+  transform: translate(10px);
+  transition: all 0.2s step-start;
+}
+span.button {
+  padding-left: 5px;
+}
+
+/* First Section End*/
